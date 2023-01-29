@@ -12,11 +12,12 @@ html {
 }
 
 body{
+    padding-top: 2px;
     margin:0
 }
 ::selection {
     color: #000; 
-    background: #c0b283;
+    background: #ffffff;
 }
 
 h1 {
@@ -29,6 +30,8 @@ h1 {
 /*Adds google font to H1 for main pages*/
 h1.page-header{
     font-family: 'Montserrat', serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 
@@ -48,7 +51,7 @@ h2,h3 {
 }
 
 a {
-    color:#ab9353;
+    color:#93897c;
     text-decoration: none;
 }
 

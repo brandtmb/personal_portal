@@ -1,11 +1,87 @@
 /* Global rules */
+:root {
+    --primary-color: #dcd0c0;
+    --secondary-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+
+  .topnav ul {
+    list-style: none;
+    z-index: 1;
+  }
+
+  .topnav ul li {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+  }
+
+  .topnav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .topnav ul li ul {
+    display: none;
+  }
+
+  .topnav ul li:hover {
+    cursor: pointer;
+    background: var(--primary-color); 
+    color: #fff;
+  }
+
+  .topnav ul li:hover a {
+    color: #fff;
+  }
+
+  .topnav ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem;
+  }
+
+  .topnav ul li:hover ul li {
+  display: block;
+  background: #5f5f5f;
+  }
+
+  .topnav ul li:hover ul li a {
+  color:white;
+  }
+
+
+  .topnav ul li:hover ul li:hover {
+  background:#5f5f5f;
+  color: inheret;
+  }
+
+  .topnav ul li:hover ul li span {
+  float: right;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  }
+
+
+
 .topnav {
     margin: auto;
     background-color: #5f5f5f;
-    overflow: auto;
 }
 
-.topnav a {
+/*.topnav a {
     float: left;
     display: block;
     color: #f4f4f4;
@@ -15,10 +91,7 @@
     text-transform: capitalize;
     font-size: 16px;
 }
-
-.topnav a.hover, .active {
-    background-color: #dcd0c0;
-}
+*/
 
 .topnav .icon {
     display: none;
@@ -34,6 +107,7 @@
     .topnav a.icon {
         float: right;
         display: block;
+    
     }
     
     .topnav.responsive {
